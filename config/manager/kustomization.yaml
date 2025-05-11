@@ -5,5 +5,5 @@ kind: Kustomization
 images:
 - name: controller
   newName: quay.io/infosah/nginx
-  newTag: v1.0.0
+  newTag: v1.1.0
 namespace: gs-nginx-operator

@@ -20,9 +20,9 @@ type NginxReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-// +kubebuilder:rbac:groups=web.mydomain.com,resources=nginxes,verbs=get;list;watch;create;update;patch;delete
-// +kubebuilder:rbac:groups=web.mydomain.com,resources=nginxes/status,verbs=get;update;patch
-// +kubebuilder:rbac:groups=web.mydomain.com,resources=nginxes/finalizers,verbs=update
+// +kubebuilder:rbac:groups=network.sherpaholidays.com,resources=nginxes,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=network.sherpaholidays.com,resources=nginxes/status,verbs=get;update;patch
+// +kubebuilder:rbac:groups=network.sherpaholidays.com,resources=nginxes/finalizers,verbs=update
 // +kubebuilder:rbac:groups=apps,resources=deployments,verbs=get;list;watch;create;update;patch;delete
 
 func (r *NginxReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {

@@ -17,7 +17,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - web.mydomain.com
+  - network.sherpaholidays.com
   resources:
   - nginxes
   verbs:
@@ -29,13 +29,13 @@ rules:
   - update
   - watch
 - apiGroups:
-  - web.mydomain.com
+  - network.sherpaholidays.com
   resources:
   - nginxes/finalizers
   verbs:
   - update
 - apiGroups:
-  - web.mydomain.com
+  - network.sherpaholidays.com
   resources:
   - nginxes/status
   verbs:

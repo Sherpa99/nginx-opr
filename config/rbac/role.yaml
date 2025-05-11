@@ -5,7 +5,19 @@ metadata:
   name: manager-role
 rules:
 - apiGroups:
-  - network.sherpaholidays.com
+  - apps
+  resources:
+  - deployments
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - web.mydomain.com
   resources:
   - nginxes
   verbs:
@@ -17,13 +29,13 @@ rules:
   - update
   - watch
 - apiGroups:
-  - network.sherpaholidays.com
+  - web.mydomain.com
   resources:
   - nginxes/finalizers
   verbs:
   - update
 - apiGroups:
-  - network.sherpaholidays.com
+  - web.mydomain.com
   resources:
   - nginxes/status
   verbs:

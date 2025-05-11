@@ -1,0 +1,9 @@
+apiVersion: network.sherpaholidays.com/v1alpha1
+kind: Nginx
+metadata:
+  labels:
+    app.kubernetes.io/name: nginx-opr
+    app.kubernetes.io/managed-by: kustomize
+  name: nginx-sample
+spec:
+  # TODO(user): Add fields here

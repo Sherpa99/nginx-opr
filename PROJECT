@@ -10,4 +10,14 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: nginx-opr
 repo: github.com/Sherpa99/nginx-opr
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: sherpaholidays.com
+  group: network
+  kind: Nginx
+  path: github.com/Sherpa99/nginx-opr/api/v1alpha1
+  version: v1alpha1
 version: "3"

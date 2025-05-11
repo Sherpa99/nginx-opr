@@ -60,6 +60,7 @@ type NginxList struct {
 	Items           []Nginx `json:"items"`
 }
 
+// Registers the Kind and list to runtime schema
 func init() {
 	SchemeBuilder.Register(&Nginx{}, &NginxList{})
 }

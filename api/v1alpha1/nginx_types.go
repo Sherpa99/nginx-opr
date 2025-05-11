@@ -30,6 +30,8 @@ type NginxSpec struct {
 
 	// Foo is an example field of Nginx. Edit nginx_types.go to remove/update
 	Replicas *int32 `json:"replicas"`
+	Image    string `json:"image, omitempty"`
+	Port     int32  `json:"port, omitempty"`
 }
 
 // NginxStatus defines the observed state of Nginx

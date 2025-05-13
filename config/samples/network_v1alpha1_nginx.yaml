@@ -6,4 +6,6 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
   name: nginx-sample
 spec:
-  # TODO(user): Add fields here
+  replicas: 1
+  image: nginxinc/nginx-unprivileged:1.25
+  port: 80
